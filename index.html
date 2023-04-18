@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Employee's Info</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="empl_detail">
+  <header>
+    <ul>
+      <li>Home</li>
+      <li>Innovation</li>
+      <li>Help</li>
+    </ul>
+  </header> <br>
+  <h3>Enter User Detail 's</h3> <br>
+
+  <table border="1" style=" height: 40vh;">
+    <tr>
+      <th>Label</th>
+      <th>Input</th>
+      <th>Update</th>
+    </tr>
+
+    <tr>
+      <td>Name</td>
+      <td><input type="text" id="uName"></td>
+      <td><button onclick="changeName()">Upadte</button></td>
+    </tr>
+
+    <tr>
+      <td>Role</td>
+      <td><input type="text" id="uRole"></td>
+      <td><button onclick="changeRole()">Upadte</button></td>
+    </tr>
+
+    <tr>
+      <td>Age</td>
+      <td><input type="number" id="uAge"></td>
+      <td><button onclick="changeAge()">Upadte</button></td>
+    </tr>
+
+    <tr>
+      <td>Location</td>
+      <td><input type="text" id="uLocation"></td>
+      <td><button onclick="changeLocation()">Upadte</button></td>
+    </tr>
+
+    <tr>
+      <td>Salary</td>
+      <td><input type="number" id="uSalary"></td>
+      <td><button onclick="changeSalary()">Upadte</button></td>
+    </tr>
+
+    <tr>
+      <td colspan="3"> <button onclick="details()">Submit</button></td>
+    </tr>
+  </table> <br>
+
+  <h4>User Detail's</h4> <br>
+
+  <table border="1">
+    <tr>
+      <th title="S.No">Label</th>
+      <th title="Present Data">Output</th>
+      <th title="delete the Current Data">Delete</th>
+      <th title="Restrore the exist Data">Undo</th>
+      <th title="Change the input Data">Edit</th>
+    </tr>
+
+    <tr>
+      <td>Name</td>
+      <td><span id="spanName"></span></td>
+      <td ><button onclick="delName()">Delete</button></td> 
+      <td><button onclick="undoName()">Undo</button></td>
+      <td><button onclick="editName()" title="Change in input Field">Edit</button></td>
+    </tr>
+
+    <tr>
+      <td>Role</td>
+      <td><span id="spanRole"></span></td>
+      <td><button onclick="delRole()">Delete</button></td>
+      <td><button onclick="undoRole()">Undo</button></td>
+      <td><button onclick="editRole()" title="Change in input Field">Edit</button></td>
+    </tr>
+
+    <tr>
+      <td>Age</td>
+      <td><span id="spanAge"></span></td>
+      <td><button onclick="delAge()">Delete</button></td>
+      <td><button onclick="undoAge()">Undo</button></td>
+      <td><button onclick="editAge()" title="Change in input Field">Edit</button></td>
+    </tr>
+
+    <tr>
+      <td>Location</td>
+      <td><span id="spanLocation"></span></td>
+      <td><button onclick="delLocation()">Delete</button></td>
+      <td><button onclick="undoLocation()">Undo</button></td>
+      <td><button onclick="editLocation()" title="Change in input Field">Edit</button></td>
+    </tr>
+
+    <tr>
+      <td>Salary</td>
+      <td><span id="spanSalary"></span></td>
+      <td><button onclick="delSalary()">Delete</button></td>
+      <td><button onclick="undoSalary()">Undo</button></td>
+      <td><button onclick="editSalary()" title="Change in input Field">Edit</button></td>
+    </tr>
+
+    <tr>
+      <td>Experence's</td><td><span id="spanExp"></span></td>
+      <td colspan="3"><button onclick="experice()">Update</button></td>
+    </tr>
+  </table>
+
+</div>
+<script src="app.js"></script>
+</body>
+</html>
